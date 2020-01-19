@@ -40,3 +40,22 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const logo_image = document.getElementById('logo-img').src = "img/logo.png"
+const cta_img = document.getElementById('cta-img').src = "img/header-img.png"
+const mid_img = document.getElementById('middle-img').src = "img/mid-page-accent.jpg"
+
+// Setting Nav Items
+const nav_items = document.querySelectorAll('nav')
+const nav_anchors = document.querySelectorAll('nav a');
+const links = document.getElementsByTagName('a');
+
+Array.from(nav_anchors).forEach(element => {
+console.log('nav anchor', element);
+element.style.color = 'green';
+element.textContent = "Dogs"
+})
+
+
+//H1
+const title = document.getElementsByClassName('cta-text h1');
